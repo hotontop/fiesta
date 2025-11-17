@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Karabük Tanıtım - Premium</title>
+<style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif;}
+
+    body {
+        background: radial-gradient(circle at 20% 20%, #ffffff, #e8e8e8, #dcdcdc);
+        background-size: 200% 200%;
+        animation: bgmove 16s ease infinite;
+        padding: 80px 0;
+    }
+
+    @keyframes bgmove {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+    }
+
+    header {
+        text-align:center;
+        margin-bottom: 70px;
+        animation: fadein 1.6s ease forwards;
+    }
+
+    @keyframes fadein {
+        from {opacity:0; transform: translateY(-20px);} 
+        to {opacity:1; transform: translateY(0);} 
+    }
+
+    header h1 {
+        font-size: 70px;
+        font-weight: 900;
+        letter-spacing: 3px;
+        color:#111;
+        text-shadow: 0 6px 25px rgba(0,0,0,0.25);
+    }
+
+    .cards {
+        width: 90%;
+        max-width: 1600px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        gap: 45px;
+        animation: fadein 1.4s ease forwards;
+    }
+
+    .card {
+        backdrop-filter: blur(22px);
+        background: rgba(255, 255, 255, 0.28);
+        border: 1px solid rgba(255,255,255,0.45);
+        border-radius: 28px;
+        padding: 25px;
+        box-shadow: 0 15px 55px rgba(0,0,0,0.15);
+        transition: 0.3s ease;
+        cursor:pointer;
+        opacity: 0;
+        animation: cardload 1s ease forwards;
+    }
+
+    @keyframes cardload {
+        from {opacity:0; transform: translateY(25px);} 
+        to {opacity:1; transform: translateY(0);} 
+    }
+
+    .card:hover {
+        transform: translateY(-12px) scale(1.02);
+        box-shadow: 0 25px 70px rgba(0,0,0,0.25);
+        background: rgba(255,255,255,0.40);
+    }
+
+    .card-head {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 800;
+        color:#000;
+    }
+
+    .chev {
+        font-size: 26px;
+        transition:0.3s;
+    }
+
+    .card-body {
+        display:block;
+        margin-top:10px;
+        font-size: 20px;
+        line-height: 1.55;
+        color:#222;
+    }
+
+    @keyframes fadecontent {
+        from {opacity:0;} to {opacity:1;} 
+    }
+
+    .img-slot {
+        width: 100%;
+        height: 260px;
+        border-radius: 22px;
+        overflow:hidden;
+        margin-bottom: 14px;
+        background:#ddd;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.18);
+        transition: 0.3s;
+    }
+
+    .img-slot img {width:100%; height:100%; object-fit:cover;}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Karabük'ün En Bilinenleri</h1>
+</header>
+
+<div class="cards">
+
+      <div class="card">
+        <div class="card-head">
+          <div class="title">Lokum</div>
+          <div class="chev">▶</div>
+        </div>
+        <div class="card-body">
+          <div class="img-slot"><img src="https://www.kulturportali.gov.tr/repoKulturPortali/large/18022013/2ca6119d-db97-450b-ac53-15bca1e8a302.JPG" /></div>
+          Safranbolu lokumu, yüzyıllardır süregelen geleneksel yöntemlerle hazırlanır. İnce ve yumuşak dokusu, ağızda hızlıca dağılan hafif yapısı ve doğal aromasıyla ünlüdür. Osmanlı döneminden bu yana konuklara ikram edilen önemli bir tatlı olarak bilinir ve Safranbolu’nun kültürel mirasının leziz bir parçasını oluşturur.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div class="title">Safran Bitkisi</div>
+          <div class="chev">▶</div>
+        </div>
+        <div class="card-body">
+          <div class="img-slot"><img src="https://cdnuploads.aa.com.tr/uploads/Contents/2023/10/19/thumbs_b_c_666e49895849f38b62fcb8b6f51ca65a.jpg?v=184548" /></div>
+          Safran, dünya üzerindeki en değerli baharatlardan biridir ve çok küçük miktarlardan bile yoğun renk, aroma ve koku verir. İspanya, İran ve Hindistan’da yaygın olarak yetiştirilse de Türkiye’deki en önemli üretim merkezi Safranbolu’dur. Çiçeklerin tek tek elle toplanması, her bir lifin büyük bir özenle ayrılması ve sonrasında kurutulması bu baharatı son derece özel ve değerli kılar. Safranbolu’da safran üretimi hem kültürel hem ekonomik açıdan büyük bir önem taşır.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div class="title">Safranlı Pilav</div>
+          <div class="chev">▶</div>
+        </div>
+        <div class="card-body">
+          <div class="img-slot"><img src="https://www.asyagurme.com/media/images/recipe/popUp/44/i_A477hX.jpg" /></div>
+          Safranlı pilav, hem görünümü hem de aroması ile oldukça dikkat çeken geleneksel bir lezzettir. Safranın suya bıraktığı güçlü pigmentler sayesinde pilav doğal ve parlak bir altın sarısına bürünür. Kendine has çiçeksi kokusu, hafif acımsı tadı ve özel aromasıyla sofralarda seçkin bir yere sahiptir. Osmanlı mutfağından modern mutfaklara kadar uzanan bu tarif, özellikle özel günlerde tercih edilir.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div class="title">Safranbolu Evleri</div>
+          <div class="chev">▶</div>
+        </div>
+        <div class="card-body">
+          <div class="img-slot"><img src="https://lh3.googleusercontent.com/gps-cs-s/AG0ilSx1jxtApXiNsOGWSIs6vUAM-PvB3ooOro2sqah55akWV4fblkskmxfKEpRJIZ1ZFdGTcibvX172KHJfAHKZ_q1ZGuni2pK_z02YYGylDBSCvF3ASesfuqhCzt2OFlbmk1TuoQw=s680-w680-h510" /></div>
+          Safranbolu Evleri, Osmanlı şehir mimarisinin en iyi korunmuş örneklerinden biridir ve bu nedenle UNESCO Dünya Mirası Listesi’ne dahil edilmiştir. Doğa, tarih ve mimarinin kusursuz bir uyum içinde birleştiği bu yapılar 18. ve 19. yüzyıldan günümüze kadar ulaşmıştır. Ahşap işçiliği, taş temel yapısı, geniş saçakları ve avlulu yaşam alanlarıyla dönemin şehir hayatını yansıtan eşsiz kültürel miras öğeleridir.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <div class="title">Kardemir</div>
+          <div class="chev">▶</div>
+        </div>
+        <div class="card-body">
+          <div class="img-slot"><img src="https://trthaberstatic.cdn.wp.trt.com.tr/resimler/2136000/kardemir-2137822.jpg" /></div>
+          Kardemir, Türkiye’nin ilk ağır sanayi tesislerinden biri olarak Karabük’ün kuruluşunda doğrudan rol oynamıştır. Cumhuriyet döneminin sanayileşme hamlelerinin en önemli simgelerinden biri olan fabrika, bölgenin ekonomik, sosyal ve kültürel gelişiminde belirleyici bir etkiye sahiptir. Bugün modern tesisleriyle üretime devam eden Kardemir, Karabük’ün kimliğiyle özdeşleşmiş bir sanayi devidir.
+        </div>
+      </div>
+
+</div>
+
+
+
+</body>
+</html>
